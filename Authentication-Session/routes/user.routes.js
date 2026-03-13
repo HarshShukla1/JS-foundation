@@ -23,7 +23,7 @@ router.post('/signup', async(req,res)=>{
     if(existingUser){
         return res.
         status(400)
-        .json({error:`user with email ${email} already exist`})
+        .json({error:`user with email ${email}  exist`})
     }
 
     const salt = randomBytes(256).toString('hex')
